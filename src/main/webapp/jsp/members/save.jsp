@@ -22,6 +22,6 @@ Success
     <li>username=<%=member.getUsername()%></li>
     <li>age=<%=member.getAge()%></li>
 </ul>
-<a href="/index.html">􀝫􀩋</a>
+<a href="/index.html">移動</a>
 </body>
 </html>

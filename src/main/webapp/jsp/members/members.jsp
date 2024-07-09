@@ -1,5 +1,6 @@
 <%@ page import="springmvc_core.domain.memeber.MemberRepository" %>
-<%@ page import="springmvc_core.domain.memeber.Member" %><%--
+<%@ page import="springmvc_core.domain.memeber.Member" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: yuda3
   Date: 2024/07/09
@@ -9,6 +10,7 @@
 <%
     MemberRepository memberRepository = MemberRepository.getInstance();
     List<Member> members = memberRepository.findAll();
+
 %>
 <html>
 <head>
@@ -16,12 +18,12 @@
     <title>Title</title>
 </head>
 <body>
-<a href="/index.html">􀝫􀩋</a>
+<a href="/index.html">移動</a>
 <table>
     <thead>
-    <th>id</th>
-    <th>username</th>
-    <th>age</th>
+    <tr>id</tr>
+    <tr>username</tr>
+    <tr>age</tr>
     </thead>
     <tbody>
     <%
