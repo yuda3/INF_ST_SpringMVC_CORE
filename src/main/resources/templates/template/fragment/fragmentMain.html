@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>part</h1>
+<h2>part insert</h2>
+<div th:insert="~{template/fragment/footer :: copy}"></div>
+<h2>part replace</h2>
+<div th:replace="~{template/fragment/footer :: copy}"></div>
+<h2>part insert expression</h2>
+<div th:replace="template/fragment/footer :: copy"></div>
+<h1>parameter</h1>
+<div th:replace="~{template/fragment/footer :: copyParam ('􀘘􀩉􀰠1', '􀘘􀩉􀰠2')}"></div>
+</body>
+</html>
